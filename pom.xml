@@ -14,7 +14,7 @@
 	</parent>
 	<groupId>com.springlearning</groupId>
 	<artifactId>springpetclinic</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>springpetclinic</name>
 	<description>Spring Boot Pet Clinic</description>
 	<properties>
@@ -33,6 +33,6 @@
 	</build>
 	<scm>
 		<developerConnection>scm:git:git@github.com:matthew156/springpetclinic.git</developerConnection>
-	  <tag>springpetclinic-0.0.1</tag>
+	  <tag>HEAD</tag>
   </scm>
 </project>
