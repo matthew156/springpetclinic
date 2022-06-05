@@ -30,9 +30,26 @@
 	</dependencies>
 
 	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+
+				<configuration>
+					<!--
+                      During release:perform, enable the "release" profile
+                     -->
+					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 	<scm>
 		<developerConnection>scm:git:git@github.com:matthew156/springpetclinic.git</developerConnection>
-	  <tag>HEAD</tag>
   </scm>
 </project>
